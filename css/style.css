@@ -34,7 +34,7 @@ body {
 
 .modal-btn:hover,
 .modal-btn:focus {
-    background-color: var(--accent-color);
+    background-color: #188CE8;
     color: #ffffff;
 }
 
