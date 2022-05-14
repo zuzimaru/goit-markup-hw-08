@@ -187,7 +187,12 @@ a[href^="tel"] {
 
 .link-list-btn:hover {
     background-color: var(--accent-color);
-    color: white;
+    color: #ffffff;
+}
+
+.link-list-btn:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
 }
 
 .link-list-btn,
