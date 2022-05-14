@@ -179,15 +179,11 @@ a[href^="tel"] {
     color: #757575;
 }
 
-.link-list-btn {
-    color: #212121;
-    background: #F5F4FA;
-    border-radius: 4px;
-}
+
 
 .link-list-btn:hover {
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: #F5F4FA;
 }
 
 .link-list-btn:focus {
