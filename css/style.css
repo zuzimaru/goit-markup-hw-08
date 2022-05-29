@@ -212,9 +212,6 @@ body {
 
 }
 
-/* .pros list {
-    padding-bottom: 0px;
-} */
 
 .pros-item:not(:last-child) {
     margin-right: 30px;
@@ -457,10 +454,6 @@ body {
     display: block;
     margin-top: 12px;
     margin-left: 70px;
-
-    /* margin-left: 70px;
-    margin-top: 72px;
-    margin-bottom: 100px; */
 
 }
 
