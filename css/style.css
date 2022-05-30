@@ -79,8 +79,7 @@ body {
 
 }
 
-.icon-img:hover,
-.icon-img:focus {
+.contact-nav:hover .icon-img {
     fill: var(--accent-color);
 
 }
@@ -446,24 +445,25 @@ body {
 
 .con-f {
     display: flex;
-
+    align-items: baseline;
 }
 
 
 .soc-link-footer {
-    display: block;
-    margin-top: 12px;
     margin-left: 70px;
-
 }
 
 .footer-list,
 .team-social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.footer-list-item,
+.footer-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
 .team-social-list-item:not(:last-child) {
     margin-right: 10px;
 }
@@ -507,7 +507,7 @@ body {
 }
 
 .social-link-our:hover .icon-img-our,
-.icon-img-our:focus {
+.social-link-our:focus .icon-img-our {
     fill: #FFF;
 }
 
