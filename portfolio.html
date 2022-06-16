@@ -1,252 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="page-header">
-        <div class="container header-container">
-            <nav class="navigation">
-                <a class="logo link" href="">Web<span class="accent">Studio</span></a>
-                <ul class="menu list">
-                    <li class="menu-item"><a class="menu-link link" href="./index.html">Студия</a></li>
-                    <li class="menu-item"><a class="menu-link current-link link" href="">Портфолио</a></li>
-                    <li class="menu-item"><a class="menu-link link" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="list header-list">
-                <li>
-                    <a class="contact-nav email link" href="mailto:info@devstudio.com">
-                        <svg class="icon-img" width="16" height="12">
-                            <use href="./images/svg/sprite/symbol-defs.svg#icon-envelope">
-                            </use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <a class="contact-nav link tel-link" href="tel:++380961111111">
-                        <svg class="icon-img" width="10" height="16">
-                            <use href="./images/svg/sprite/symbol-defs.svg#icon-smartphone">
-                            </use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="container header-container">
+        <nav class="navigation">
+          <a class="logo link" href="">
+            Web
+            <span class="accent">Studio</span>
+          </a>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link current-link link" href="">Портфолио</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list header-list">
+          <li>
+            <a class="contact-nav email link" href="mailto:info@devstudio.com">
+              <svg class="icon-img" width="16" height="12">
+                <use
+                  href="./images/svg/sprite/symbol-defs.svg#icon-envelope"
+                ></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="contact-nav link tel-link" href="tel:++380961111111">
+              <svg class="icon-img" width="10" height="16">
+                <use
+                  href="./images/svg/sprite/symbol-defs.svg#icon-smartphone"
+                ></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-        <section class="links">
-            <div class="container">
-                <ul class="link-list list">
-                    <li class="link-list-item"><button class="link-list-btn">Все</button></li>
-                    <li class="link-list-item"><button class="link-list-btn">Веб-сайты</button></li>
-                    <li class="link-list-item"><button class="link-list-btn">Приложения</button>
-                    </li>
-                    <li class="link-list-item"><button class="link-list-btn">Дизайн</button></li>
-                    <li class="link-list-item"><button class="link-list-btn">Маркетинг</button></li>
-                </ul>
-                <ul class="pic-list-list list">
-
-                    <li class="pic-list-item">
-
-                        <a class="pic-list-link link" href="">
-
-                            <div class="some-wrapper"><img class="aa" src="./images/porfolio/img_laptop.jpg" width="370"
-                                    height="294" alt="site in the laptop">
-                                <div class="pic-appear">
-                                    <p class="pic-appear-text">Ресурс предлагает комплексные предложения с разным
-                                        уровнем
-                                        функционала и сервисов.
-                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
-                                        частном
-                                        лице.</p>
-                                </div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Технокряк</h3>
-                                <p class="pic-list-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="pic-list-item">
-                        <a class="pic-list-link link" href="">
-                            <div class="some-wrapper">
-                                <img src="./images/porfolio/basketball.jpg" width="370" height="294"
-                                    alt="two man plays basketball">
-                                <div class="pic-appear"></div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Постер New Orlean vs Golden Star</h3>
-                                <p class="pic-list-text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=" pic-list-item">
-                        <a class="pic-list-link link" href="">
-                            <div class="some-wrapper">
-                                <img src="./images/porfolio/seafood.jpg" width="370" height="294" alt="fish">
-                                <div class="pic-appear"></div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Ресторан Seafood</h3>
-                                <p class="pic-list-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=" pic-list-item">
-                        <a class="pic-list-link link" href="">
-                            <div class="some-wrapper">
-                                <img src="./images/porfolio/headphone.jpg" width="370" height="294" alt="headphone">
-                                <div class="pic-appear"></div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Проект Prime</h3>
-                                <p class="pic-list-text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=" pic-list-item">
-                        <a class="pic-list-link link" href="">
-                            <div class="some-wrapper">
-                                <img src="./images/porfolio/boxes.jpg" width="370" height="294" alt="boxes">
-                                <div class="pic-appear"></div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Проект Boxes</h3>
-                                <p class="pic-list-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="pic-list-item">
-                        <a class="pic-list-link link" href="">
-                            <div class="some-wrapper">
-                                <img src="./images/porfolio/monitor.jpg" width="370" height="294" alt="pc monitor">
-                                <div class="pic-appear"></div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Inspiration has no Borders</h3>
-                                <p class="pic-list-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="pic-list-item">
-                        <a class="pic-list-link link" href="">
-                            <div class="some-wrapper">
-                                <img src="./images/porfolio/magazine.jpg" width="370" height="294" alt="magazine">
-                                <div class="pic-appear"></div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Издание Limited Edition</h3>
-                                <p class="pic-list-text">Дизайн</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=" pic-list-item">
-                        <a class="pic-list-link link" href="">
-                            <div class="some-wrapper">
-                                <img src="./images/porfolio/trinket.jpg" width="370" height="294" alt="trinket">
-                                <div class="pic-appear"></div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Проект LAB</h3>
-                                <p class="pic-list-text">Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class=" pic-list-item">
-                        <a class="pic-list-link link" href="">
-                            <div class="some-wrapper">
-                                <img src="./images/porfolio/laptop.jpg" width="370" height="294" alt="laptop.jpg">
-                                <div class="pic-appear"></div>
-                            </div>
-                            <div class="list-link-wrapper">
-                                <h3 class="pic-list-title">Growing Business</h3>
-                                <p class="pic-list-text">Приложение</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <section class="links">
+        <div class="container">
+          <ul class="link-list list">
+            <li class="link-list-item">
+              <button class="link-list-btn">Все</button>
+            </li>
+            <li class="link-list-item">
+              <button class="link-list-btn">Веб-сайты</button>
+            </li>
+            <li class="link-list-item">
+              <button class="link-list-btn">Приложения</button>
+            </li>
+            <li class="link-list-item">
+              <button class="link-list-btn">Дизайн</button>
+            </li>
+            <li class="link-list-item">
+              <button class="link-list-btn">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="pic-list-list list">
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    class="aa"
+                    src="./images/porfolio/img_laptop.jpg"
+                    width="370"
+                    height="294"
+                    alt="site in the laptop"
+                  />
+                  <div class="pic-appear">
+                    <p class="pic-appear-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">Технокряк</h3>
+                  <p class="pic-list-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    src="./images/porfolio/basketball.jpg"
+                    width="370"
+                    height="294"
+                    alt="two man plays basketball"
+                  />
+                  <div class="pic-appear"></div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="pic-list-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    src="./images/porfolio/seafood.jpg"
+                    width="370"
+                    height="294"
+                    alt="fish"
+                  />
+                  <div class="pic-appear"></div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">Ресторан Seafood</h3>
+                  <p class="pic-list-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    src="./images/porfolio/headphone.jpg"
+                    width="370"
+                    height="294"
+                    alt="headphone"
+                  />
+                  <div class="pic-appear"></div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">Проект Prime</h3>
+                  <p class="pic-list-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    src="./images/porfolio/boxes.jpg"
+                    width="370"
+                    height="294"
+                    alt="boxes"
+                  />
+                  <div class="pic-appear"></div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">Проект Boxes</h3>
+                  <p class="pic-list-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    src="./images/porfolio/monitor.jpg"
+                    width="370"
+                    height="294"
+                    alt="pc monitor"
+                  />
+                  <div class="pic-appear"></div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">Inspiration has no Borders</h3>
+                  <p class="pic-list-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    src="./images/porfolio/magazine.jpg"
+                    width="370"
+                    height="294"
+                    alt="magazine"
+                  />
+                  <div class="pic-appear"></div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">Издание Limited Edition</h3>
+                  <p class="pic-list-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    src="./images/porfolio/trinket.jpg"
+                    width="370"
+                    height="294"
+                    alt="trinket"
+                  />
+                  <div class="pic-appear"></div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">Проект LAB</h3>
+                  <p class="pic-list-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="pic-list-item">
+              <a class="pic-list-link link" href="">
+                <div class="some-wrapper">
+                  <img
+                    src="./images/porfolio/laptop.jpg"
+                    width="370"
+                    height="294"
+                    alt="laptop.jpg"
+                  />
+                  <div class="pic-appear"></div>
+                </div>
+                <div class="list-link-wrapper">
+                  <h3 class="pic-list-title">Growing Business</h3>
+                  <p class="pic-list-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container con-f">
-            <div class="tmp">
-                <a class="logo link" href="">Web<span class="accent">Studio</span></a>
-                <address class="adress-wrapper">
-                    <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-                    <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="contact-link link footer-link" href="tel:++380961111111">+38 096 111 11 11</a>
-                </address>
-            </div>
-            <div class="soc-link-footer">
-                <h3 class="footer-title">присоединяйтесь</h3>
-                <ul class="footer-list list">
-                    <li class="footer-list-item">
-                        <a href="" class="social-link link">
-                            <svg class="icon-img-footer" width="20" height="20">
-                                <use href="./images/svg/sprite/symbol-defs.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="" class="social-link link">
-                            <svg class="icon-img-footer" width="20" height="20">
-                                <use href="./images/svg/sprite/symbol-defs.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="" class="social-link link">
-                            <svg class="icon-img-footer" width="20" height="20">
-                                <use href="./images/svg/sprite/symbol-defs.svg#icon-Vector">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="" class="social-link link">
-                            <svg class="icon-img-footer" width="20" height="20">
-                                <use href="./images/svg/sprite/symbol-defs.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-form-container">
-                <b class="subscription-form-title">подпишись на рассылку</b>
-                <form class="subscription-form">
-
-                    <input type="email" name="mail" placeholder="E-mail" class="subscription-form-input" id="mail" />
-                    <button type="submit" class="subscription-form-btn">
-                        Подписаться
-                        <svg class="subscription-form-btn-icon" width="24px" height="24px">
-                            <use href="./images/svg/sprite/symbol-defs.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+      <div class="container con-f">
+        <div class="tmp">
+          <a class="logo link" href="">
+            Web
+            <span class="accent">Studio</span>
+          </a>
+          <address class="adress-wrapper">
+            <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="contact-link link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+            <a class="contact-link link footer-link" href="tel:++380961111111">
+              +38 096 111 11 11
+            </a>
+          </address>
         </div>
+        <div class="soc-link-footer">
+          <h3 class="footer-title">присоединяйтесь</h3>
+          <ul class="footer-list list">
+            <li class="footer-list-item">
+              <a href="" class="social-link link">
+                <svg class="icon-img-footer" width="20" height="20">
+                  <use
+                    href="./images/svg/sprite/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="" class="social-link link">
+                <svg class="icon-img-footer" width="20" height="20">
+                  <use
+                    href="./images/svg/sprite/symbol-defs.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="" class="social-link link">
+                <svg class="icon-img-footer" width="20" height="20">
+                  <use
+                    href="./images/svg/sprite/symbol-defs.svg#icon-Vector"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="" class="social-link link">
+                <svg class="icon-img-footer" width="20" height="20">
+                  <use
+                    href="./images/svg/sprite/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form-container">
+          <b class="subscription-form-title">подпишись на рассылку</b>
+          <form class="subscription-form">
+            <input
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              class="subscription-form-input"
+              id="mail"
+            />
+            <button type="submit" class="subscription-form-btn">
+              Подписаться
+              <svg
+                class="subscription-form-btn-icon"
+                width="24px"
+                height="24px"
+              >
+                <use
+                  href="./images/svg/sprite/symbol-defs.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
