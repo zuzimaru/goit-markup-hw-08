@@ -311,7 +311,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.header-container {
+.page-header__container {
   display: flex;
   align-items: center;
 }
@@ -325,7 +325,7 @@ body {
   display: flex;
 }
 
-.menu-link {
+.menu__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -336,7 +336,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.logo {
+.page-header__logo {
   margin-right: 93px;
 }
 
@@ -353,7 +353,7 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 

@@ -1,4 +1,4 @@
-.header-container {
+.page-header__container {
     display: flex;
     align-items: center;
 }
@@ -12,7 +12,7 @@
     display: flex;
 }
 
-.menu-link {
+.menu__link {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -23,7 +23,7 @@
     letter-spacing: 0.02em;
 }
 
-.logo {
+.page-header__logo {
     margin-right: 93px;
 }
 
@@ -41,7 +41,7 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
 
