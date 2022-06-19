@@ -1,0 +1,53 @@
+.pros {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.icon-img-antenna {
+    display: flex;
+}
+
+.pros-list {
+    display: flex;
+}
+
+.pros-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.pros-title {
+    margin-bottom: 10px;
+}
+
+.ico-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pros-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+
+}
+
+.pros-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: left;
+    min-width: 270px;
+}
