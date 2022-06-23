@@ -46,6 +46,9 @@ img {
 .link {
   text-decoration: none;
   color: #000;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -341,6 +344,7 @@ body {
 }
 
 .logo {
+  display: flex;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -361,7 +365,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .navigation .accent {
   color: #000;
 }
@@ -373,7 +376,6 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
-
 .contact-nav:hover .icon-img {
   fill: var(--accent-color);
 }
@@ -407,7 +409,6 @@ body {
 .current-link {
   color: var(--accent-color);
 }
-
 .current-link::before {
   position: absolute;
   bottom: 0;
@@ -515,7 +516,6 @@ body {
 .about-list-item {
   position: relative;
 }
-
 .about-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -546,6 +546,7 @@ body {
   text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #F5F4FA;
 }
 
 .team-tile {
@@ -562,10 +563,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.team {
-  background-color: #F5F4FA;
 }
 
 .team-item {
@@ -678,18 +675,15 @@ body {
   margin-right: 30px;
 }
 
-.regular-client-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .regular-client {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .regular-client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -699,15 +693,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.regular-client-link:hover,
-.regular-client-link:focus {
+.regular-client-link:hover, .regular-client-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
-
-.regular-client-link:hover .icon-regular-cl,
-.regular-client-link:focus .icon-regular-cl {
+.regular-client-link:hover .icon-regular-cl, .regular-client-link:focus .icon-regular-cl {
   fill: var(--accent-color);
 }
 
@@ -715,6 +705,9 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
+}
+.footer .accent {
+  color: #FFF;
 }
 
 .footer-link {
@@ -724,6 +717,11 @@ body {
 
 .footer-list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-title {
@@ -736,11 +734,6 @@ body {
   color: #FFFFFF;
 }
 
-.footer-list {
-  display: flex;
-  justify-content: center;
-}
-
 .soc-link-footer {
   margin-left: 70px;
   margin-right: 93px;
@@ -748,10 +741,6 @@ body {
 
 .icon-img-footer {
   fill: #FFF;
-}
-
-.footer .accent {
-  color: #FFF;
 }
 
 .contact-link {
@@ -853,6 +842,11 @@ body {
 }
 
 .link-list-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   padding: 6px 22px 6px 22px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -861,9 +855,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link-list-btn:hover,
-.link-list-btn:focus {
+.link-list-btn:hover, .link-list-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -873,10 +865,6 @@ body {
   cursor: pointer;
 }
 
-.link-list-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .link-list-item {
   font-weight: 500;
   font-size: 16px;
@@ -884,6 +872,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+.link-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .link-list:not(:last-child) {
@@ -898,16 +889,14 @@ body {
   flex-wrap: wrap;
 }
 
+.pic-list-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
 .pic-list-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
-
 .pic-list-item:not(:nth-last-child(-n+3)) {
   margin-bottom: 30px;
-}
-
-.pic-list-item {
-  flex-basis: calc((100% - 90px) / 4);
 }
 
 .pic-list-link {

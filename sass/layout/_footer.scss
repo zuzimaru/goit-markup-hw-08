@@ -2,6 +2,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+        & .accent {
+        color: #FFF;
+         }
 }
 
 .footer-link {
@@ -10,6 +13,11 @@
 }
 .footer-list-item:not(:last-child) {
     margin-right: 10px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-title {
@@ -23,10 +31,7 @@
 
 }
 
-.footer-list {
-    display: flex;
-    justify-content: center;
-}
+
 .soc-link-footer {
     margin-left: 70px;
     margin-right: 93px;
@@ -35,9 +40,7 @@
 .icon-img-footer {
     fill: #FFF;
 }
-.footer .accent {
-    color: #FFF;
-}
+
 
 .contact-link {
 

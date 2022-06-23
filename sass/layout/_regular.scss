@@ -19,11 +19,6 @@
     margin-right: 30px;
 }
 
-.regular-client-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .regular-client {
     padding-top: 94px;
@@ -31,6 +26,9 @@
 }
 
 .regular-client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -39,17 +37,13 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-.regular-client-link:hover,
-.regular-client-link:focus {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-}
-
-.regular-client-link:hover .icon-regular-cl,
-.regular-client-link:focus .icon-regular-cl {
-    fill: var(--accent-color);
+        &:hover,
+        &:focus {
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+        }
+            &:hover .icon-regular-cl,
+            &:focus .icon-regular-cl {
+            fill: var(--accent-color);
+            }
 }

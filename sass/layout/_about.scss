@@ -20,12 +20,9 @@
 
 .about-list-item {
     position: relative;
-}
-
-
-
-.about-list-item:not(:last-child) {
-    margin-right: 30px;
+        &:not(:last-child) {
+         margin-right: 30px;
+        }
 }
 
 .about-text-wrapper {
