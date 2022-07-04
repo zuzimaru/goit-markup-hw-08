@@ -1,49 +1,77 @@
+.regular-client {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .regular-client-title {
-    font-weight: 700;
-    font-size: 36px;
-    margin-bottom: 50px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 30px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .regular-client-list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
 }
 
-
-.regular-client-list-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-
-.regular-client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.regular-client-list-item {
+  width: 210px;
+  height: 92px;
+  margin: 15px;
 }
 
 .regular-client-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition-property: color;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
-    transition-property: color;
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-        border: 1px solid var(--accent-color);
-        border-radius: 4px;
-        }
-            &:hover .icon-regular-cl,
-            &:focus .icon-regular-cl {
-            fill: var(--accent-color);
-            }
+  }
+  &:hover .icon-regular-cl,
+  &:focus .icon-regular-cl {
+    fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-client-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .regular-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .regular-client-title {
+    margin-bottom: 50px;
+  }
+
+  .regular-client-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .regular-client-list-item {
+    width: 170px;
+    margin: 0;
+  }
 }

@@ -1,114 +1,182 @@
-.page-header__container {
-    display: flex;
-    align-items: center;
+.contact-nav {
+  display: none;
 }
 
 .header-list {
-    display: flex;
-    margin-left: auto;
+  display: none;
 }
 
-.menu {
-    display: flex;
-}
-
-.menu__link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-
-.page-header__logo {
-    margin-right: 93px;
-}
-
-.logo {
-    display: flex;
-    font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-}
-
-
-.page-header {
-    border-bottom: 1px solid #ECECEC;
-}
-
-.menu__item:not(:last-child) {
-    margin-right: 50px;
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
-        & .accent {
-        color: #000;
-        }
+  display: flex;
+  align-items: center;
+  & .accent {
+    color: #000;
+  }
 }
 
-.contact-nav {
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu-open-btn {
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+    margin-left: auto;
+    line-height: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+
+  .mobile-menu-open-btn {
+    display: none;
+  }
+
+  .page-header {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .contact-nav {
+    display: block;
+  }
+
+  .contact-nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    
-        &:hover .icon-img {
-        fill: var(--accent-color);
-        }
-}
 
+    &:hover .icon-img {
+      fill: var(--accent-color);
+    }
+  }
 
-.email {
-    margin-right: 50px;
-}
+  .header-list {
+    margin-left: 84px;
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+  }
 
-.tel-link {
+  .header-list:first-child {
+    margin-bottom: 10px;
+  }
+
+  .email {
+    display: flex;
     margin-right: 0px;
+  }
+  .tel-link {
+    display: flex;
+  }
 }
 
-.email,
-.tel-link {
+@media screen and (min-width: 1200px) {
+  .header-list {
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+  }
+
+  .email {
+    margin-right: 30px;
+  }
+
+  .tel-link {
+    margin-right: 0px;
+  }
+
+  .email,
+  .tel-link {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.page-header__logo {
+  margin-right: 93px;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .icon-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    fill: #757575;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-link {
-    color: var(--accent-color);
-    
-    &::before {
+  color: var(--accent-color);
+
+  &::before {
     position: absolute;
     bottom: 0;
     left: 0;
     display: inline-block;
     width: 100%;
     height: 4px;
-    background: #2196F3;
+    background: #2196f3;
     border-radius: 2px;
     content: '';
-    }
+  }
 }
-
-
-

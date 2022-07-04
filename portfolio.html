@@ -31,16 +31,25 @@
           </a>
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link link" href="./index.html">Студия</a>
+              <a class="menu__link link" href="./index.html">
+                Студия
+              </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link current-link link" href="">Портфолио</a>
+              <a class="menu__link current-link link" href="./portfolio.html">
+                Портфолио
+              </a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open-btn" data-menu-open>
+          <svg class="mobile-menu-open-btn__icon" width="40" height="40">
+            <use href="./images/svg/sprite/symbol-defs.svg#burger-icon"></use>
+          </svg>
+        </button>
         <ul class="list header-list">
           <li>
             <a class="contact-nav email link" href="mailto:info@devstudio.com">
@@ -63,6 +72,68 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile_menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/svg/sprite/symbol-defs.svg#icon-x"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__links list">
+            <li class="mobile-menu__links__item">
+              <a class="mobile-menu__links_link link" href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li class="mobile-menu__links__item">
+              <a
+                class="mobile-menu__links_link current-link link"
+                href="./portfolio.html"
+              >
+                Портфолио
+              </a>
+            </li>
+            <li class="mobile-menu__links__item">
+              <a class="mobile-menu__links_link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contact list">
+            <li class="mobile-menu__contact__item">
+              <a class="mobile-menu__contact_link link email_link" href="">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile-menu__contact__item email_l">
+              <a class="mobile-menu__contact_link link" href="">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-links list">
+            <li class="mobile-menu__social-links__item">
+              <a class="mobile-menu__social-links__item__link link" href="">
+                Instagram
+              </a>
+            </li>
+            <li class="mobile-menu__social-links__item">
+              <a class="mobile-menu__social-links__item__link link" href="">
+                Twitter
+              </a>
+            </li>
+            <li class="mobile-menu__social-links__item">
+              <a class="mobile-menu__social-links__item__link link" href="">
+                Facebook
+              </a>
+            </li>
+            <li class="mobile-menu__social-links__item">
+              <a class="mobile-menu__social-links__item__link link" href="">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -89,13 +160,36 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    class="aa"
-                    src="./images/porfolio/img_laptop.jpg"
-                    width="370"
-                    height="294"
-                    alt="site in the laptop"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_1@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet1@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_1@1x.jpg 1x,
+                        ./images/mobile/portfolio/project_1@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_1@1x.jpg"
+                      alt="Страница веб-сайта Технокряк"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear">
                     <p class="pic-appear-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -114,17 +208,42 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    src="./images/porfolio/basketball.jpg"
-                    width="370"
-                    height="294"
-                    alt="two man plays basketball"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_2@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet2@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_2@1x.jpg 1x,
+                        ./images/mobile/portfolio/project_2@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_2@1x.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear"></div>
                 </div>
                 <div class="list-link-wrapper">
                   <h3 class="pic-list-title">
-                    Постер New Orlean vs Golden Star
+                    Постер New Orlean vs Golden
+                    <span>Star</span>
                   </h3>
                   <p class="pic-list-text">Дизайн</p>
                 </div>
@@ -133,12 +252,36 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    src="./images/porfolio/seafood.jpg"
-                    width="370"
-                    height="294"
-                    alt="fish"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_3@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet3@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_3@1x.jpg 1x,
+                        ./images/mobile/portfolio/project_3@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_3@1x.jpg"
+                      alt="Логотип приложения ресторана Seafood"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear"></div>
                 </div>
                 <div class="list-link-wrapper">
@@ -150,12 +293,36 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    src="./images/porfolio/headphone.jpg"
-                    width="370"
-                    height="294"
-                    alt="headphone"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_4@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet4@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_4@1x.jpg 1x,
+                        ./images/mobile/portfolio/project_4@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_4@1x.jpg"
+                      alt="Наушники"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear"></div>
                 </div>
                 <div class="list-link-wrapper">
@@ -167,12 +334,36 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    src="./images/porfolio/boxes.jpg"
-                    width="370"
-                    height="294"
-                    alt="boxes"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_5@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet5@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_5@1x.jpg 1x,
+                        ./images/mobile/portfolio/project_5@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_5@1x.jpg"
+                      alt="Приложение для проекта Boxes"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear"></div>
                 </div>
                 <div class="list-link-wrapper">
@@ -184,12 +375,36 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    src="./images/porfolio/monitor.jpg"
-                    width="370"
-                    height="294"
-                    alt="pc monitor"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_6@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet6@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_6@1x.jpg 1x,
+                        ./images/mobile/portfolio/project_6@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_6@1x.jpg"
+                      alt="Приложение для проекта Boxes"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear"></div>
                 </div>
                 <div class="list-link-wrapper">
@@ -201,12 +416,36 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    src="./images/porfolio/magazine.jpg"
-                    width="370"
-                    height="294"
-                    alt="magazine"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_7@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet7@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_7@1x.jpg  1x,
+                        ./images/mobile/portfolio/project_7@2x..jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_7@1x.jpg"
+                      alt="Приложение для проекта Boxes"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear"></div>
                 </div>
                 <div class="list-link-wrapper">
@@ -218,12 +457,36 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    src="./images/porfolio/trinket.jpg"
-                    width="370"
-                    height="294"
-                    alt="trinket"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_8@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet8@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_8@1x.jpg 1x,
+                        ./images/mobile/portfolio/project_8@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_8@1x.jpg"
+                      alt="Приложение для проекта Boxes"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear"></div>
                 </div>
                 <div class="list-link-wrapper">
@@ -235,12 +498,36 @@
             <li class="pic-list-item">
               <a class="pic-list-link link" href="">
                 <div class="some-wrapper">
-                  <img
-                    src="./images/porfolio/laptop.jpg"
-                    width="370"
-                    height="294"
-                    alt="laptop.jpg"
-                  />
+                  <picture class="portfolio-prj__picture">
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/project_desktop_9@1x.jpg 1x,
+                        ./images/desktop/portfolio/project_desktop_9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/project_tablet9@1x.jpg 1x,
+                        ./images/tablet/portfolio/project_tablet9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/project_9@1x.jpg 1x,
+                        ./images/mobile/portfolio/project_9@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/project_9@1x.jpg"
+                      alt="Приложение для проекта Boxes"
+                      width="370"
+                      height="294"
+                      class="pic-prj-card__img"
+                    />
+                  </picture>
                   <div class="pic-appear"></div>
                 </div>
                 <div class="list-link-wrapper">
@@ -254,55 +541,78 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container con-f">
-        <div class="tmp">
-          <a class="logo link" href="">
-            Web
-            <span class="accent">Studio</span>
+      <div class="footer-container container">
+        <div class="footer-contacts">
+          <a href="./index.html" class="logo link">
+            <span class="accent">Web</span>
+            <span class="footer-logo_style">Studio</span>
           </a>
-          <address class="adress-wrapper">
-            <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="contact-link link" href="mailto:info@devstudio.com">
-              info@devstudio.com
-            </a>
-            <a class="contact-link link footer-link" href="tel:++380961111111">
-              +38 096 111 11 11
-            </a>
+          <address class="footer-address">
+            <ul class="footer-address__list list">
+              <li class="footer-address__item">
+                <a
+                  href="https://goo.gl/maps/VdQWWz9B43m97snR7"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="footer-address__link footer-contact__address"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="footer-address__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-address__link footer-contact__mail"
+                >
+                  info@example.com
+                </a>
+              </li>
+              <li class="footer-address__item">
+                <a
+                  href="tel:+380991111111"
+                  class="footer-address__link footer-contact__tel"
+                >
+                  +38 099 111 11 11
+                </a>
+              </li>
+            </ul>
           </address>
         </div>
-        <div class="soc-link-footer">
-          <h3 class="footer-title">присоединяйтесь</h3>
-          <ul class="footer-list list">
-            <li class="footer-list-item">
-              <a href="" class="social-link link">
-                <svg class="icon-img-footer" width="20" height="20">
+
+        <!-- ======================== footer social list ======================== -->
+        <div class="footer-social">
+          <h3 class="footer-social__title">присоединяйтесь</h3>
+          <ul class="footer-social__list list">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link">
+                <svg class="footer-social__icon" width="20px" height="20px">
                   <use
                     href="./images/svg/sprite/symbol-defs.svg#icon-instagram"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-list-item">
-              <a href="" class="social-link link">
-                <svg class="icon-img-footer" width="20" height="20">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link">
+                <svg class="footer-social__icon" width="20px" height="20px">
                   <use
                     href="./images/svg/sprite/symbol-defs.svg#icon-twitter"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-list-item">
-              <a href="" class="social-link link">
-                <svg class="icon-img-footer" width="20" height="20">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link">
+                <svg class="footer-social__icon" width="20px" height="20px">
                   <use
                     href="./images/svg/sprite/symbol-defs.svg#icon-Vector"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-list-item">
-              <a href="" class="social-link link">
-                <svg class="icon-img-footer" width="20" height="20">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link">
+                <svg class="footer-social__icon" width="20px" height="20px">
                   <use
                     href="./images/svg/sprite/symbol-defs.svg#icon-linkedin"
                   ></use>
@@ -311,24 +621,21 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-container">
-          <b class="subscription-form-title">подпишись на рассылку</b>
-          <form class="subscription-form">
+        <div class="footer-subscription-form">
+          <b class="footer-subscription-form__title">подпишись на рассылку</b>
+          <form name="subscription-form" class="subscription-form">
             <input
               type="email"
               name="mail"
               placeholder="E-mail"
-              class="subscription-form-input"
+              class="subscription-form__input"
               id="mail"
             />
-            <button type="submit" class="subscription-form-btn">
+            <button type="submit" class="subscription-form__btn">
               Подписаться
-              <svg
-                class="subscription-form-btn-icon"
-                width="24px"
-                height="24px"
-              >
+              <svg class="subscription-form__icon" width="24px" height="24px">
                 <use
+                  fill="white"
                   href="./images/svg/sprite/symbol-defs.svg#icon-icon-send"
                 ></use>
               </svg>
@@ -337,5 +644,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
