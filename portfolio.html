@@ -31,9 +31,7 @@
           </a>
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link link" href="./index.html">
-                Студия
-              </a>
+              <a class="menu__link link" href="./index.html">Студия</a>
             </li>
             <li class="menu__item">
               <a class="menu__link current-link link" href="./portfolio.html">
@@ -46,12 +44,12 @@
           </ul>
         </nav>
         <button type="button" class="mobile-menu-open-btn" data-menu-open>
-          <svg class="mobile-menu-open-btn__icon" width="40" height="40">
+          <svg class="mobile-menu-open-btn__icon" width="24" height="16">
             <use href="./images/svg/sprite/symbol-defs.svg#burger-icon"></use>
           </svg>
         </button>
         <ul class="list header-list">
-          <li>
+          <li class="header-contacts__item">
             <a class="contact-nav email link" href="mailto:info@devstudio.com">
               <svg class="icon-img" width="16" height="12">
                 <use
@@ -61,7 +59,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="header-contacts__item">
             <a class="contact-nav link tel-link" href="tel:++380961111111">
               <svg class="icon-img" width="10" height="16">
                 <use
@@ -83,15 +81,15 @@
           </button>
           <ul class="mobile-menu__links list">
             <li class="mobile-menu__links__item">
-              <a class="mobile-menu__links_link link" href="./index.html">
+              <a
+                class="mobile-menu__links_link link mobile-menu__links_link--current"
+                href="./index.html"
+              >
                 Студия
               </a>
             </li>
             <li class="mobile-menu__links__item">
-              <a
-                class="mobile-menu__links_link current-link link"
-                href="./portfolio.html"
-              >
+              <a class="mobile-menu__links_link link" href="./portfolio.html">
                 Портфолио
               </a>
             </li>
@@ -99,40 +97,45 @@
               <a class="mobile-menu__links_link link" href="">Контакты</a>
             </li>
           </ul>
-          <ul class="mobile-menu__contact list">
-            <li class="mobile-menu__contact__item">
-              <a class="mobile-menu__contact_link link email_link" href="">
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="mobile-menu__contact__item email_l">
-              <a class="mobile-menu__contact_link link" href="">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mobile-menu__social-links list">
-            <li class="mobile-menu__social-links__item">
-              <a class="mobile-menu__social-links__item__link link" href="">
-                Instagram
-              </a>
-            </li>
-            <li class="mobile-menu__social-links__item">
-              <a class="mobile-menu__social-links__item__link link" href="">
-                Twitter
-              </a>
-            </li>
-            <li class="mobile-menu__social-links__item">
-              <a class="mobile-menu__social-links__item__link link" href="">
-                Facebook
-              </a>
-            </li>
-            <li class="mobile-menu__social-links__item">
-              <a class="mobile-menu__social-links__item__link link" href="">
-                LinkedIn
-              </a>
-            </li>
-          </ul>
+          <div class="mobile-menu-contacts-container">
+            <ul class="mobile-menu__contact list">
+              <li class="mobile-menu__contact__item">
+                <a class="mobile-menu__contact_link link email_link" href="">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-menu__contact__item email_l">
+                <a
+                  class="mobile-menu__contact_link mobile-menu__contact_link_email link"
+                  href=""
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-links list">
+              <li class="mobile-menu__social-links__item">
+                <a class="mobile-menu__social-links__item__link link" href="">
+                  Instagram
+                </a>
+              </li>
+              <li class="mobile-menu__social-links__item">
+                <a class="mobile-menu__social-links__item__link link" href="">
+                  Twitter
+                </a>
+              </li>
+              <li class="mobile-menu__social-links__item">
+                <a class="mobile-menu__social-links__item__link link" href="">
+                  Facebook
+                </a>
+              </li>
+              <li class="mobile-menu__social-links__item">
+                <a class="mobile-menu__social-links__item__link link" href="">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>

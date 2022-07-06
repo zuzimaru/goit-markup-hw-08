@@ -43,7 +43,7 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -53,6 +53,7 @@
   .modal {
     max-width: 450px;
     height: 100%;
+    min-height: 609px;
   }
 }
 

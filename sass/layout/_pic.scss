@@ -1,4 +1,4 @@
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .pic-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -38,7 +38,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px 63px 24px;
+
   background: rgba(33, 150, 243, 0.9);
   transform: translate(0, 100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,9 +52,10 @@
 .pic-appear-text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: #ffffff;
+  padding: 63px 24px;
 }
 
 .pic-list-title {
@@ -102,7 +103,7 @@
 }
 
 @media screen and (max-width: 479px) {
-  .pic-list-text {
+  .pic-appear-text {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.6666666667;
